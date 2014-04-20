@@ -6,11 +6,12 @@ using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Views;
 using Cirrious.MvvmCross.Wpf.Platform;
 using Cirrious.MvvmCross.Wpf.Views;
+using CodeVault.Wpf.Services;
 using MupApps.MvvmCross.Plugins.ControlsNavigation.Wpf;
 
 #endregion
 
-namespace CodeVault.Wpf
+namespace CodeVault.Wpf.Bootstrap
 {
     /// <summary>
     ///  Defines the Setup type.

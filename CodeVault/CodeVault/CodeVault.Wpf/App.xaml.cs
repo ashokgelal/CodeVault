@@ -4,6 +4,7 @@ using System;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.ViewModels;
 using Cirrious.MvvmCross.Wpf.Views;
+using CodeVault.Wpf.Bootstrap;
 
 #endregion
 

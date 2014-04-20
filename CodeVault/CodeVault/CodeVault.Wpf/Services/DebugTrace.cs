@@ -6,7 +6,7 @@ using Cirrious.CrossCore.Platform;
 
 #endregion
 
-namespace CodeVault.Wpf
+namespace CodeVault.Wpf.Services
 {
     public class DebugTrace : IMvxTrace
     {

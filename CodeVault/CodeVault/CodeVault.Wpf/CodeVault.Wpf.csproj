@@ -52,6 +52,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.1.2-beta1\lib\net45\Cirrious.MvvmCross.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\..\..\packages\MahApps.Metro.0.14.0-ALPHA23\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
     <Reference Include="MupApps.MvvmCross.Plugins.ControlsNavigation">
       <HintPath>..\..\..\packages\MupApps.MvvmCross.Plugins.ControlsNavigation.1.0.5\lib\net45\MupApps.MvvmCross.Plugins.ControlsNavigation.dll</HintPath>
     </Reference>
@@ -59,6 +62,9 @@
       <HintPath>..\..\..\packages\MupApps.MvvmCross.Plugins.ControlsNavigation.1.0.5\lib\net45\MupApps.MvvmCross.Plugins.ControlsNavigation.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\MahApps.Metro.0.14.0-ALPHA23\lib\net45\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml">
@@ -73,10 +79,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DebugTrace.cs" />
-    <Compile Include="Setup.cs" />
+    <Compile Include="Services\DebugTrace.cs" />
+    <Compile Include="Bootstrap\Setup.cs" />
     <Compile Include="Views\BaseView.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="Views\Shell.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -84,10 +90,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\Shell.xaml.cs">
+      <DependentUpon>Shell.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -98,12 +108,19 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <Resource Include="Resources\Entypo.ttf" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CodeVault.Core\CodeVault.Core.csproj">
       <Project>{747706f4-ecbf-4d50-8d72-b0ddcc18395c}</Project>
       <Name>CodeVault.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\WindowsIcons-license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Entypo-license.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

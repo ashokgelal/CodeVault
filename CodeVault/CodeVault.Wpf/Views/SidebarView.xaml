@@ -1,0 +1,17 @@
+﻿<mvx:MvxWpfControl x:Class="CodeVault.Wpf.Views.SidebarView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mvx="clr-namespace:MupApps.MvvmCross.Plugins.ControlsNavigation.Wpf;assembly=MupApps.MvvmCross.Plugins.ControlsNavigation.Wpf"
+                   mc:Ignorable="d"
+                   Visibility="Visible"
+                   d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/basedark.xaml" />
+    </UserControl.Resources>
+    <Grid x:Name="SidebarContentGrid" Background="{StaticResource _siderbarBgBrush}">
+        <Button Content="Sidebar View" Width="200" Height="100" />
+    </Grid>
+</mvx:MvxWpfControl>

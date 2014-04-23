@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeVault.Core", "CodeVault\CodeVault\CodeVault.Core\CodeVault.Core.csproj", "{747706F4-ECBF-4D50-8D72-B0DDCC18395C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeVault.Core", "CodeVault\CodeVault.Core\CodeVault.Core.csproj", "{747706F4-ECBF-4D50-8D72-B0DDCC18395C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeVault.Core.Tests", "CodeVault\CodeVault\CodeVault.Core.Tests\CodeVault.Core.Tests.csproj", "{6DC3A41A-2BD3-4D5A-BB0B-56DAFE404803}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeVault.Core.Tests", "CodeVault\CodeVault.Core.Tests\CodeVault.Core.Tests.csproj", "{6DC3A41A-2BD3-4D5A-BB0B-56DAFE404803}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeVault.Wpf", "CodeVault\CodeVault\CodeVault.Wpf\CodeVault.Wpf.csproj", "{E4BE721B-841A-4745-90B8-B4C66946B957}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeVault.Wpf", "CodeVault\CodeVault.Wpf\CodeVault.Wpf.csproj", "{E4BE721B-841A-4745-90B8-B4C66946B957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1FD0F355-2BA7-439D-B3B2-7276828DF5AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +32,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DC3A41A-2BD3-4D5A-BB0B-56DAFE404803} = {1FD0F355-2BA7-439D-B3B2-7276828DF5AF}
 	EndGlobalSection
 EndGlobal

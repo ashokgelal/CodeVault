@@ -1,8 +1,8 @@
 ﻿namespace CodeVault.Wpf.Views
 {
-    public partial class Shell
+    public partial class ShellView
     {
-        public Shell()
+        public ShellView()
         {
             InitializeComponent();
         }

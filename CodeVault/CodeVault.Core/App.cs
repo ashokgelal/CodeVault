@@ -17,8 +17,7 @@ namespace CodeVault.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            // Start the app with the First View Model.
-            RegisterAppStart<ShellViewModel>();
+            RegisterAppStart<MainContentViewModel>();
         }
     }
 }
